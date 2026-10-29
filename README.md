@@ -1,23 +1,14 @@
-# Mountain Explorer v2 — minimalist multi-page-style PWA prototype
+# Himalaya · Parvat Explorer (prototype v3)
 
-## UX direction
-Minimalist editorial design, warm off-white canvas, forest-green accents, serif mountain headings, generous spacing, compact facts and dedicated mountain detail pages.
+## What's updated
+- Home branding now features **HIMALAYA · PARVAT EXPLORER** and a custom mountain mark.
+- Search across mountain name, range, region, country and continent.
+- Filters for continent, country and elevation bands (8,000–8,999 m; 6,000–7,999 m; 4,000–5,999 m; under 4,000 m).
+- The same filters are available on the full Mountain Index page.
+- Country and continent choices are populated from the catalogue.
 
-## How to run
-Serve this folder over HTTPS or localhost for installable PWA/service-worker behavior. Open `index.html` for a preview. Mountain cards open dedicated detail views with a distinct route-like URL hash (`#mountain/everest`); the app includes separate Discover, Mountain Index, Field Journal, About and Archive Tools views.
+## Upload to GitHub Pages
+In the repository, open **Add file → Upload files** and upload/replace `index.html`, `manifest.json`, `sw.js`, and `README.md` from this folder. Commit the changes to `main`. Wait a few minutes and refresh the live site. If the old UI remains on a phone, close the installed app and clear/reload the site cache; service-worker cache can delay updates.
 
-## Prototype functionality
-- Mountain catalogue with filters/search
-- Dedicated mountain detail page per mountain
-- History, first ascent, route/camps, season/safety, summit register
-- Add/edit/delete mountain records
-- Community field-note submissions and local review queue
-- Summit record submission
-- Import/export archive JSON
-- LocalStorage persistence and PWA shell
-
-## Not production yet
-This is a client-side prototype. LocalStorage data is only on this browser/device. Archive Tools are not protected by real authentication, and image URLs are used instead of cloud uploads. Demo content needs source verification before public release.
-
-## Production backend plan
-Connect Supabase (Postgres, Auth, Storage) or Firebase. Tables/collections: mountains, routes, camps, expeditions, climbers, summit_records, submissions, media, source_references. Add server-enforced roles and access policies. Registered climbers submit changes; admins approve and publish. Store image files in object storage with attribution, licence and source fields. Deploy over HTTPS. Content updates will then appear across devices without rebuilding the app.
+## Prototype limitations
+This is still a client-side prototype. LocalStorage changes stay on the same browser/device; Archive Tools are not protected by real authentication. For public launch, connect a backend (e.g. Supabase) with database-enforced admin-only editing, public read access, anonymous mountain requests, moderation, and image storage. Demo facts and geography need source verification before public release.

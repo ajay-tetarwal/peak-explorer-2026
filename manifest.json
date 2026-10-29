@@ -1,1 +1,11 @@
-{"name":"Mountain Explorer","short_name":"Mountain Explorer","description":"A minimalist archive of mountain histories and expeditions","start_url":"./index.html","display":"standalone","background_color":"#f7f8f5","theme_color":"#172f28","icons":[]}
+{
+  "name": "Himalaya · Parvat Explorer",
+  "short_name": "Parvat Explorer",
+  "description": "Explore mountain heights, countries, continents, history and expedition records.",
+  "start_url": "./index.html#home",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f8f5",
+  "theme_color": "#172f28",
+  "icons": []
+}
