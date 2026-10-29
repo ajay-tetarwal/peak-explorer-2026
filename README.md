@@ -1,14 +1,17 @@
-# Himalaya · Parvat Explorer (prototype v3)
+# Himalaya Parvat Explorer
 
-## What's updated
-- Home branding now features **HIMALAYA · PARVAT EXPLORER** and a custom mountain mark.
-- Search across mountain name, range, region, country and continent.
-- Filters for continent, country and elevation bands (8,000–8,999 m; 6,000–7,999 m; 4,000–5,999 m; under 4,000 m).
-- The same filters are available on the full Mountain Index page.
-- Country and continent choices are populated from the catalogue.
+A static GitHub Pages prototype for a minimalist mountain catalogue.
 
-## Upload to GitHub Pages
-In the repository, open **Add file → Upload files** and upload/replace `index.html`, `manifest.json`, `sw.js`, and `README.md` from this folder. Commit the changes to `main`. Wait a few minutes and refresh the live site. If the old UI remains on a phone, close the installed app and clear/reload the site cache; service-worker cache can delay updates.
+## Included in this update
+- Nanda Devi-inspired minimalist mountain mark (inline SVG; no logo PNG required)
+- Refined navy, glacier-blue, white and saffron palette
+- Responsive catalogue filters for continent, country and elevation
+- Subtle motion, card hover effects and reduced-motion accessibility support
+- Instagram link: https://www.instagram.com/indianparvat/
+- Feedback dialog with local-device prototype storage
 
-## Prototype limitations
-This is still a client-side prototype. LocalStorage changes stay on the same browser/device; Archive Tools are not protected by real authentication. For public launch, connect a backend (e.g. Supabase) with database-enforced admin-only editing, public read access, anonymous mountain requests, moderation, and image storage. Demo facts and geography need source verification before public release.
+## Important prototype limits
+This is a static front-end. Feedback and mountain submissions are stored only in the visitor's browser and are not delivered to the site owner. Local storage is not shared between visitors. The current archive-tools screen is a prototype and does not provide secure authentication or server-side permissions. Before accepting real public submissions or managing official mountain data, connect a backend such as Supabase with row-level security, authentication for admin-only changes, and shared storage.
+
+## Publish on GitHub Pages
+Upload `index.html`, `manifest.json`, `sw.js`, and `README.md` to the repository root on the `main` branch. GitHub Pages should be set to deploy from `main` / root.
